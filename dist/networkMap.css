@@ -1,0 +1,63 @@
+
+#mainBtn {
+    background-color: rgb(156, 193, 249);
+}
+
+#map {
+    position: relative;
+    border-radius: 50%;
+    width: 750px;
+    height: 750px;
+    left: calc(50% - 375px);
+    top: calc(50% - 375px);
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+#network {
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    background-color: rgb(250, 45, 45);
+}
+
+#node {
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    background-color: rgb(83, 83, 83);
+}
+
+#node:nth-child(2) {
+    transform: translateY(-375px);
+}
+#node:nth-child(3) {
+    transform: rotate(40deg) translateY(-375px) rotate(-40deg);
+}
+#node:nth-child(4) {
+    transform: rotate(80deg) translateY(-375px) rotate(-80deg);
+}
+#node:nth-child(5) {
+    transform: rotate(120deg) translateY(-375px) rotate(-120deg);
+}
+#node:nth-child(6) {
+    transform: rotate(160deg) translateY(-375px) rotate(-160deg);
+}
+#node:nth-child(7) {
+    transform: rotate(200deg) translateY(-375px) rotate(-200deg);
+}
+#node:nth-child(8) {
+    transform: rotate(240deg) translateY(-375px) rotate(-240deg);
+}
+#node:nth-child(9) {
+    transform: rotate(280deg) translateY(-375px) rotate(-280deg);
+}
+#node:nth-child(10) {
+    transform: rotate(320deg) translateY(-375px) rotate(-320deg);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDS</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-center m-0">LIDS-D</h1>
+        <h4 class="text-center text-muted mt-0 mb-3">Data is ready to download.</h4>
+        <div class="card text-center mx-auto" style="width: 400px;">
+            <div class="card-header">
+                Data from Alerts
+            </div>
+            <div class="list-group list-group-flush">
+                <input id="fileInput" type="file" style="display:none;" />
+                <a href="#" class="list-group-item list-group-item-primary list-group-item-action" onclick="document.getElementById('fileInput').click();">AlertData.csv</a>
+                <a href="#" class="list-group-item list-group-item-primary list-group-item-action" onclick="document.getElementById('fileInput').click();">AlertData.JSON</a>
+                <a href="#" class="list-group-item list-group-item-primary list-group-item-action" onclick="document.getElementById('fileInput').click();">AlertData.XML</a>
+            </div>
+            <p class="mt-2">Click on whichever you wish to download.</p>
+        </div>
+        <a class="btn mt-3" id="mainBtn" href="networkMap.html" role="button">Back</a>
+    </div>
+    <script type="text/javascript" src="../src/exportData.js"></script>
+</body>
+</html>

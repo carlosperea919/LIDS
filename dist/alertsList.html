@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="alertsList.css">
+</head>
+<body>
+    <h1 class="text-center" id="title">Alerts</h1>
+    <div class="text-center mb-3">
+        <a class="btn" href="networkMap.html" role="button">Back to Network Map</a>
+    </div>
+    <table class="table table-striped text-center w-75 mx-auto">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Source</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Reason</th>
+            <th scope="col">Severity</th>
+          </tr>
+        </thead>
+        <tbody id="alertsTableBody">
+          
+        </tbody>
+    </table>
+    <script type="text/javascript" src="../src/alertsList.js"></script>
+</body>
+</html>

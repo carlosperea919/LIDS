@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDS</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="networkMap.css">
+</head>
+<body>
+  <div class="alert alert-danger alert-dismissible fade show d-flex align-items-start mx-5 my-3 rounded" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-exclamation-triangle me-3" viewBox="0 0 16 16">
+      <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+      <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+    </svg>
+    <div class="d-flex flex-column">
+      <h4 class="alert-heading">
+      Warning
+      </h4>
+      <p>New malicious activity detected. New ALERT created in Workspace 1.</p>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+    <h1 class="text-center m-0">LIDS-D</h1>
+    <h4 class="text-center text-muted mt-0 mb-3">Network Map</h4>
+    <div class="text-center">
+      <a class="btn" id="mainBtn" href="alertsList.html?All" role="button">View All Alerts</a>
+      <a class="btn" id="mainBtn" href="networkMap.html" role="button">Refresh Data</a>
+      <a class="btn" id="mainBtn" href="exportData.html" role="button">Export All Alerts</a>
+    </div>
+    <table class="table mx-auto mt-3 text-center" style="max-width:800px;">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">System Name</th>
+          <th scope="col">IP</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-danger">
+          <th scope="row">1</th>
+          <td>Workspace1</td>
+          <td>10.0.0.1</td>
+          <td><button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#alertsModal" data-bs-node="Workspace1">View</button></td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">2</th>
+          <td>Workspace2</td>
+          <td>10.0.0.2</td>
+          <td><button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#alertsModal" data-bs-node="Workspace2">View</button></td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row">3</th>
+          <td>Workspace3</td>
+          <td>10.0.0.3</td>
+          <td><button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#alertsModal" data-bs-node="Workspace3">View</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="modal fade" id="alertsModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="alertsModalLabel">Node Alert Stats</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="accordion" id="accordionAlerts">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+            
+            </div>
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../src/networkMap.js"></script>
+</body>
+</html>
